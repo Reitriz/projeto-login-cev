@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+:root{
+    --cor-lilas: #5f2c82;
+    --cor-verde: #49a09d;
+}
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: var(--cor-lilas);
+    position: relative;
+    height: 100vh;
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 520px;
+    width: 260px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .6s;
+}
+section#imagem{
+    background: var(--cor-lilas) url(../imagens/pexels-predio.png) left bottom no-repeat;
+    background-size: cover;
+    height: 200px; 
+}
+section#formulario{
+    padding: 10px;
+}
+section#formulario> h1{
+    text-align: center;
+}
+section#formulario > p{
+    margin-top: 10px;
+}
+div.campo{
+    background-color: var(--cor-lilas);
+    margin: 5px 0px;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+div.campo > input{
+    width: 85%;
+    margin-bottom: 5px;
+}
+span{
+    width: 10%;
+}
+form > div > label{
+    display: none;
+}
+form input[type=submit]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor-verde);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+input[type=submit]:hover{
+    background-color: #fff;
+    color: var(--cor-verde);
+    font-weight: bold;
+}
+form a {
+    display: block;
+    text-align: center;
+    border: 1px solid var(--cor-verde);
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: var(--cor-verde);
+    margin-top: 5px;
+}
+form a:hover{
+    text-shadow: 0px 0px 10px var(--cor-verde);
+}
+
