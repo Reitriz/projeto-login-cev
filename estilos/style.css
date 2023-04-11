@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Função calc() NO CSS*/
+
 :root{
     --cor-lilas: #5f2c82;
     --cor-verde: #49a09d;
@@ -51,6 +53,9 @@ div.campo{
 div.campo > input{
     width: 85%;
     margin-bottom: 5px;
+}
+div.campo >input:focus-within{
+    background-color: #fff;
 }
 span{
     width: 10%;
